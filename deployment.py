@@ -2,14 +2,14 @@ import random
 import os
 
 min_request = 50
-max_request = 400
+max_request = 300
 
 max_limit = 400
 
 min_latency = 8
-max_latency = 40
+max_latency = 30
 
-n_nodes = 10
+n_nodes = 12
 
 graph = "graph{\n"
 for i in range(0, n_nodes):
@@ -36,6 +36,6 @@ for i in range(0, maxEdges):
             
 graph += "}\n"
 
-f = open("graphs/depGraph.dot", "w")
+f = open("graphs/depGraph2.dot", "w")
 f.write(graph)
 f.close()

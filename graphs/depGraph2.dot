@@ -1,0 +1,27 @@
+graph{
+"0[label="cpuOffloading - request:295.41 - limit:396.41", label="n0"];
+"1[label="cpuOffloading - request:174.08 - limit:200.25", label="n1"];
+"2[label="cpuOffloading - request:206.74 - limit:236.71", label="n2"];
+"3[label="cpuOffloading - request:106.08 - limit:312.40", label="n3"];
+"4[label="cpuOffloading - request:190.76 - limit:386.59", label="n4"];
+"5[label="cpuOffloading - request:225.80 - limit:285.34", label="n5"];
+"6[label="cpuOffloading - request:108.07 - limit:220.05", label="n6"];
+"7[label="cpuOffloading - request:50.08 - limit:385.37", label="n7"];
+"8[label="cpuOffloading - request:92.33 - limit:236.34", label="n8"];
+"9[label="cpuOffloading - request:289.14 - limit:330.37", label="n9"];
+"10[label="cpuOffloading - request:56.73 - limit:108.49", label="n10"];
+"11[label="cpuOffloading - request:63.73 - limit:397.22", label="n11"];
+	9 -- 7[label="latency - value:16.61", label="n9-n7"];
+	0 -- 8[label="latency - value:20.56", label="n0-n8"];
+	8 -- 6[label="latency - value:23.38", label="n8-n6"];
+	1 -- 11[label="latency - value:20.55", label="n1-n11"];
+	4 -- 6[label="latency - value:29.50", label="n4-n6"];
+	9 -- 5[label="latency - value:12.99", label="n9-n5"];
+	5 -- 0[label="latency - value:29.30", label="n5-n0"];
+	8 -- 3[label="latency - value:21.23", label="n8-n3"];
+	11 -- 9[label="latency - value:20.72", label="n11-n9"];
+	2 -- 6[label="latency - value:13.54", label="n2-n6"];
+	4 -- 9[label="latency - value:24.91", label="n4-n9"];
+	11 -- 8[label="latency - value:20.13", label="n11-n8"];
+	11 -- 6[label="latency - value:26.40", label="n11-n6"];
+}
