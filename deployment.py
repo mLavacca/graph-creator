@@ -12,14 +12,14 @@ def getRandomColor():
     return color
 
 min_request = 50
-max_request = 300
+max_request = 380
 
 max_limit = 400
 
 min_latency = 8
-max_latency = 30
+max_latency = 80
 
-n_nodes = 12
+n_nodes = 16
 
 color = getRandomColor()
 
@@ -34,7 +34,7 @@ for i in range(0, n_nodes):
     graph += ", label=\"n" + str(i) + "\""
     graph += "];\n"
 
-maxEdges = int((n_nodes * (n_nodes-1))/6)
+maxEdges = int((n_nodes * (n_nodes-1))/10)
 
 for i in range(0, maxEdges):
     k = random.randint(0, n_nodes-1)
@@ -50,7 +50,7 @@ for i in range(0, maxEdges):
             
 graph += "}\n"
 
-f = open("exp_graphs/depGraph2.dot", "w")
+f = open("exp_graphs/depGraph3.dot", "w")
 f.write(graph)
 f.close()
 
