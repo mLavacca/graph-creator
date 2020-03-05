@@ -50,7 +50,7 @@ for i in range(0, maxEdges):
             
 graph += "}\n"
 
-f = open("graphs/depGraph2.dot", "w")
+f = open("exp_graphs/depGraph2.dot", "w")
 f.write(graph)
 f.close()
 

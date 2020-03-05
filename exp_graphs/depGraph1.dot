@@ -1,0 +1,37 @@
+graph{
+	node[style="filled", color="#551110"]
+	0[label="cpuOffloading - request:286.67 - limit:356.17", label="n0"];
+	1[label="cpuOffloading - request:177.17 - limit:357.47", label="n1"];
+	2[label="cpuOffloading - request:54.93 - limit:156.75", label="n2"];
+	3[label="cpuOffloading - request:177.02 - limit:210.20", label="n3"];
+	4[label="cpuOffloading - request:275.15 - limit:338.01", label="n4"];
+	5[label="cpuOffloading - request:200.88 - limit:309.43", label="n5"];
+	6[label="cpuOffloading - request:201.87 - limit:219.39", label="n6"];
+	7[label="cpuOffloading - request:175.28 - limit:279.00", label="n7"];
+	8[label="cpuOffloading - request:254.72 - limit:308.91", label="n8"];
+	9[label="cpuOffloading - request:175.05 - limit:287.70", label="n9"];
+	10[label="cpuOffloading - request:86.05 - limit:196.14", label="n10"];
+	11[label="cpuOffloading - request:134.06 - limit:270.85", label="n11"];
+	3 -- 7[label="latency - value:12.60", label="n3-n7"];
+	1 -- 5[label="latency - value:11.75", label="n1-n5"];
+	10 -- 6[label="latency - value:20.21", label="n10-n6"];
+	7 -- 2[label="latency - value:27.15", label="n7-n2"];
+	1 -- 10[label="latency - value:18.11", label="n1-n10"];
+	8 -- 11[label="latency - value:21.14", label="n8-n11"];
+	0 -- 7[label="latency - value:12.34", label="n0-n7"];
+	10 -- 7[label="latency - value:17.62", label="n10-n7"];
+	3 -- 5[label="latency - value:8.84", label="n3-n5"];
+	6 -- 9[label="latency - value:18.81", label="n6-n9"];
+	11 -- 0[label="latency - value:8.58", label="n11-n0"];
+	7 -- 10[label="latency - value:14.78", label="n7-n10"];
+	8 -- 11[label="latency - value:26.90", label="n8-n11"];
+	2 -- 7[label="latency - value:11.67", label="n2-n7"];
+	8 -- 7[label="latency - value:23.35", label="n8-n7"];
+	9 -- 6[label="latency - value:24.43", label="n9-n6"];
+	0 -- 4[label="latency - value:12.11", label="n0-n4"];
+	2 -- 1[label="latency - value:12.00", label="n2-n1"];
+	2 -- 3[label="latency - value:9.09", label="n2-n3"];
+	5 -- 1[label="latency - value:26.14", label="n5-n1"];
+	3 -- 4[label="latency - value:14.78", label="n3-n4"];
+	1 -- 0[label="latency - value:10.38", label="n1-n0"];
+}

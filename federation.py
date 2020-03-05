@@ -36,6 +36,6 @@ for i in range(0, n_nodes):
 
 graph += "}\n"
 
-f = open("graphs/fedGraph.dot", "w")
+f = open("exp_graphs/fedGraph.dot", "w")
 f.write(graph)
 f.close()
