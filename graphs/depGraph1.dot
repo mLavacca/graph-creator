@@ -1,5 +1,4 @@
 graph{
-	node[style="filled", color="#B3C4F5"]
 	0[label="cpuOffloading - request:188.60 - limit:440.86", label="n0"];
 	1[label="cpuOffloading - request:484.53 - limit:749.31", label="n1"];
 	2[label="cpuOffloading - request:373.09 - limit:777.75", label="n2"];
